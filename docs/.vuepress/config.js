@@ -1,6 +1,6 @@
+import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
-import { recoTheme } from 'vuepress-theme-reco'
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -8,7 +8,7 @@ export default defineUserConfig({
   title: 'VuePress',
   description: 'My first VuePress Site',
 
-  theme: recoTheme({
+  theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
 
     navbar: ['/', '/get-started'],
